@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi programa</title>
+</head>
+
+<body>
+
+    <h1>Hola, bienvenido/a a mi programa</h1>
+
+    <p>Dime cuál es tu nombre:</p>
+    <input id="nombre">
+    <button onclick="saludar()">Continuar</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function saludar() {
+            let nombre = document.getElementById("nombre").value;
+
+            document.getElementById("resultado").innerHTML =
+                "Un gusto conocerte " + nombre;
+        }
+    </script>
+
+</body>
+</html>
